@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Personal Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            height: 200px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        #profile-picture {
+            border-radius: 100%;
+            width: 330px;
+            height: 330px;
+            object-fit: cover;
+            position: absolute;
+            margin-left: 20px;
+            top: 100%;
+            left: 20px;
+            transform: translateY(-50%);
+            z-index: 2;
+            border: 3px solid black;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 22px;
+            color: white;
+            padding: 10px;
+            margin: 0 10px;
+            margin-bottom: 80px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        #content {
+            padding: 20px;
+            margin-top: 10px; /* Adjust as needed */
+            margin-left: 500px;
+        }
+        #content h1{
+            font-size: 50px;
+        }
+
+        #bio {
+            font-size: 20px;
+            max-width: 600px;
+        }
+
+        #social-button {
+            width: 150px;
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+        #social-button:hover {
+            background-color: #3B5998;
+        }
+
+        @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    #profile-picture {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        transform: none;
+    }
+
+    #content {
+        margin-left: 0;
+    }
+}
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img id="profile-picture" src="414995155_680918970847802_1561574083503813089_n.jpg" alt="Profile Picture">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h1>VINCENT LLOYD ALDERITE PACATANG</h1>
+        <div id="bio">
+            <p>WORKS: SUNSET DIVE RESORT <br><br> Address: Basdio, Guindulman, Bohol <br><br> Age: 22 Years old</p>
+        </div>
+        <a id="social-button"  href="https://www.facebook.com/vincentlloyd.alderitepacatang.1"> My Facebook </a>
+        
+        
+    </div>
+
+</body>
+</html>
